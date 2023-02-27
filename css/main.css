@@ -1,43 +1,220 @@
+/**/ /*** BODY ***/ /**/
 body {
-    margin: 60px auto;
-    width: 70%;
-}
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+	background-color: white;
+	width: 100%;
+		margin: auto;
+	overflow-y: scroll;
+	font-family: Georgia;
+		color: black;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+/**/ /*** FONTS ***/ /**/
+
+h1 { font-size: 2vw; text-align: center; text-decoration: none; }
+h1 a { text-decoration: none;}
+h2 { text-align: center; text-decoration: none; }
+h3{ font-size: 1vw; text-align: center; }
+h4{ text-decoration: none; }
+
+hr { margin: 0 200px; }
+
+ul{ font-size: 1.3vw; list-style-type: none; padding-left:1%; padding-right:1%; }
+li{ font-variant: small-caps; padding: 1%; }
+
+button{ font-family: Georgia; font-size: 1.1vw; font-variant: small-caps; }
+
+p.intro { font-size: 16px; line-height: 2; text-align: center; margin: 0 50px 40px 50px; }
+p.paragraph { font-size: 15px; line-height: 2; text-align: justify; text-indent: 30pt; margin: 0 100px; }
+p.updated{ font-size: 12px; font-style: italic; text-align: right; margin: 30px 100px; }
+	
+@media screen and (max-width: 480px) {
+	h1,h2,h3,h4,ul,il{ font-size: 12px; }
 }
 
-ul.posts li {
-    list-style: none;
+/**/ /*** NAVIGATION BAR ***/ /**/
+.nav{ width: 100%; text-align:center; }
+
+li a { color: black; text-decoration: none; padding-left: 1%; padding-right: 1%; }
+
+li a:hover { border-bottom: 1px solid black; color: #158415; padding-left: 1%; padding-right: 1%; }
+
+a.text { color: black; text-decoration: none; padding: 0; }
+
+a.text:hover{ background-color: #d2f9d2; padding: 0; }
+
+.active_submenu{ border-bottom: 1px solid black; color:#158415; padding-left:1%; padding-right:1%; }
+
+/**/ /*** MAIN SECTIONS ***/ /**/
+
+.main{ width:80%; margin:auto; background-color:inherit; }
+
+.news{ clear:both; margin-left:0; margin-right:0; text-align:center; }
+
+/**/ /*** BIO ***/ /**/
+
+.biography { margin-top:2%;}
+
+.profile_image_container { position:relative; width:50%; max-width:200px; max-height:200px; margin:auto; }
+
+.profile_image { display: block; width:100%; height:auto; border-radius:10px; }
+
+.overlay {
+ position: absolute;
+ top: 0; bottom: 0; left: 0; right: 0;
+ width: 100%; height: 100%;
+ opacity: 0;
+ transition: .5s ease;
+ background-color: #158415;
+ border-radius: 10px;
 }
+
+.profile_image_container:hover .overlay { opacity: 0.8; border-radius: 10px; }
+
+.cv_message {
+ color: white;
+ font-size: 20px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ -webkit-transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+ text-align: center;
+}
+
+/**/ /*** ARCHIVE ***/ /**/
+
+.archive {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 10px;
+}	
+
+/* Container needed to position the overlay. */
+.category{
+	position: relative;
+	width: 50%;
+		max-width: 300px;
+}
+
+/* Make the image responsive */
+.index_item {
+	display: block;
+	width: 300px;
+	height: 250px;
+	object-fit: cover;
+	border-radius:10px;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.archive_section {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+	text-decoration: none;
+  font-size: calc(12px+1.5vw);
+  padding: 10px;
+  text-align: center;
+}
+
+/* Mouse over the container, fade in the overlay title */
+.category:hover .archive_section { opacity: 1; }
+
+.archive_section a { color: white; text-decoration: none; }
+
+.archive_image { height:250px; width:350px; object-fit:contain; border-radius:10px;}
+
+/**/ /*** PUBLICATIONS ***/ /**/
+
+.publications_menu { background-color: inherit; text-align: center; margin-top: 2%; }
+
+/* Style the buttons that are used to open the publications menu */
+.tablinks {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px;
+	transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tablinks:hover {
+ background-color: #d2f9d2;
+ color: black;
+ border-radius: 5px;
+}
+
+/* Create an active/current tablink class */
+.tablinks.active {
+ background-color: #d2f9d2;
+ border-radius: 5px;
+ color: black;
+}
+
+/* Style the publications sections */
+.publications {
+	display: none;
+	width: 100%;
+	background-color: inherited;
+}
+
+/* References */
+
+.collapsible_references {
+	background-color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 5px;
+	width: 100%;
+		text-align: left;
+	outline: none;
+	font-size: 16px;
+}
+
+.collapsible_references:hover { color: green; }
+
+.publication_details{
+	color: black;	
+	line-height: 1.5;
+	margin: 0;
+	padding: 5px;
+	text-align: left;
+		hyphens: auto;
+		text-indent: 0;
+}
+
+.content_references {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: inherit;
+	border: none;
+	color: black;
+}
+
+.content_references:hover{ border bottom: 1px solid #008000; }
+
+.active_references { background-image: linear-gradient(to right, #008000, white 2%); color: #008000; }
+
+/* COVER IMAGES */
+
+.cover_container{ padding:0 10px; overflow:hidden; }
+
+.cover_image{ width:auto; max-width:200px; height:auto; max-height:400px; }
+
+/**/ /*** FOOTER ***/ /**/
+.footer{ background-color:transparent; display:inline; font-size:15px; text-align:center; bottom:0; left:0; width:100%; }
+
+/* SOCIAL MEDIA */
+
+
+.social_media_icon{ border:0; max-width:30px; }
+
+.social_media { position:absolute; float:right; right:10%; margin-top:10px; }
