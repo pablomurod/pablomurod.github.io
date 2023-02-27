@@ -73,3 +73,9 @@ ul.posts li {
  transform: translate(-50%, -50%);
  text-align: center;
 }
+
+.publications {
+	width:80%;
+	margin:auto;
+	background-color:inherit;
+}
