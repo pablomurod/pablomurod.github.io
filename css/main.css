@@ -1,6 +1,6 @@
 body {
     margin: 60px auto;
-    width: 70%;
+    width: 80%;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -42,9 +42,11 @@ ul.posts li {
     list-style: none;
 }
 
-/**/ /*** BIO ***/ /**/
+@media screen and (max-width: 480px) {
+	h1,h2,h3,h4,ul,il{ font-size: 12px; }
+}
 
-.biography { margin-top:2%;}
+/**/ /*** PROFILE IMAGE ***/ /**/
 
 .profile_image_container { position:relative; width:50%; max-width:200px; max-height:200px; margin:auto; }
 
@@ -74,8 +76,15 @@ ul.posts li {
  text-align: center;
 }
 
+/**/ /*** ABOUT ***/ /**/
+
+p.intro { font-size: 16px; line-height: 2; text-align: center; margin: 0 50px 40px 50px; }
+p.paragraph { font-size: 15px; line-height: 2; text-align: justify; text-indent: 30pt; margin: 0 100px; }
+p.updated{ font-size: 12px; font-style: italic; text-align: right; margin: 30px 100px; }
+	
+/**/ /*** PUBLICATIONS ***/ /**/
 .publications {
-	width:80%;
+	width:100%;
 	margin:auto;
 	background-color:inherit;
 }
