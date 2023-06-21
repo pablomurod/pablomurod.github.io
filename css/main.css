@@ -86,6 +86,12 @@ ul.posts li {
  text-align: center;
 }
 
+/**/ /*** COVER IMAGES ***/ /**/
+
+.cover_image_container { position:relative; width:80%; max-width:1000px; max-height:400px; margin:auto; }
+
+.cover_image { display: block; width:100%; height:auto; border-radius:10px; margin:auto; }
+
 /**/ /*** ABOUT ***/ /**/
 
 .blurb {
