@@ -90,7 +90,7 @@ ul.posts li {
 
 .cover_image_container { position:relative; width:80%; max-width:1000px; max-height:400px; margin:auto; }
 
-.cover_image { display: block; width:80%; height:60%; border-radius:10px; margin:auto; }
+.cover_image { display: block; width:100%; height:60%; border-radius:10px; margin:auto; }
 
 /**/ /*** ABOUT ***/ /**/
 
