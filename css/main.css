@@ -109,3 +109,10 @@ p.updated{ font-size: 12px; font-style: italic; text-align: right; margin: 30px 
 }
 
 /**/ /*** PROJECTS ***/ /**/
+
+.projects {
+	width: 100%;
+	margin: auto;
+	background-color: inherit;
+	clear: both;
+}
