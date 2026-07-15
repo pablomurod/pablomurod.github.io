@@ -262,3 +262,29 @@ nav a:hover, nav a.active {
         padding: 8% 5%;
     }
 }
+
+/* Group Photo Styling */
+.group-photo-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.group-img {
+    width: 100%;
+    height: auto;
+    max-height: 450px; /* Prevents giant vertical images from taking over the screen */
+    object-fit: cover; /* Keeps faces and framing looking crisp */
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.group-caption {
+    font-size: 0.9rem !important;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 0.2rem;
+    margin-bottom: 0 !important;
+}
