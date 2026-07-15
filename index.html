@@ -6,13 +6,14 @@
     <title>Pablo Muñoz-Rodríguez</title>
     <!-- Modern typography -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- Link to the independent stylesheet -->
+    <!-- Link to our independent stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <a href="#" class="logo">PMR</a>
+        <!-- Top Left is now your full name -->
+        <a href="#" class="logo">Pablo Muñoz-Rodríguez</a>
         <nav>
             <a href="#" class="active">About</a>
             <a href="#publications">Publications</a>
@@ -21,31 +22,42 @@
     </header>
 
     <div class="container">
-        <!-- LEFT COLUMN (30%) -->
+        <!-- LEFT COLUMN (Asymmetric Sidebar with friendly Bio-card setup) -->
         <div class="left-col">
+            <!-- Non-pretentious, elegant circular portrait element -->
             <img src="assets/img/prof_pic.jpg" alt="Pablo Muñoz-Rodríguez" class="profile-img">
+            
             <h1>Pablo Muñoz-Rodríguez</h1>
             <p class="subtitle">Scientific Researcher</p>
+            
             <div class="links">
-                <a href="https://orcid.org/0000-0002-3580-8136" target="_blank">
-                    <span class="icon">🧬</span> ORCID Profile
+                <!-- ORCID Badge -->
+                <a href="https://orcid.org/0000-0002-3580-8136" target="_blank" class="badge badge-orcid">
+                    <img src="https://pub.orcid.org/v3.0/static/images/orcid_16x16.svg" alt="ORCID">
+                    ORCID Profile
                 </a>
-                <a href="https://scholar.google.com/citations?user=fl0V-DkAAAAJ" target="_blank">
-                    <span class="icon">🎓</span> Google Scholar
+                
+                <!-- Google Scholar Badge -->
+                <a href="https://scholar.google.com/citations?user=fl0V-DkAAAAJ" target="_blank" class="badge badge-scholar">
+                    <!-- Clean minimal representation icon -->
+                    <span>🎓</span>
+                    Scholar Profile
                 </a>
             </div>
         </div>
 
-        <!-- RIGHT COLUMN (70%) -->
+        <!-- RIGHT COLUMN (Main Content) -->
         <div class="right-col">
             <h2>Biography</h2>
             <p>I am a scientific researcher specializing in botany, plant systematics, and computational evolutionary tools.</p>
             
-            <blockquote>
-                My research integrates traditional botanical taxonomy with interactive software design, making species identification accessible, dynamic, and computational.
-            </blockquote>
+            <p>My work integrates traditional botanical taxonomy with interactive software design, aiming to make species identification accessible, dynamic, and reproducible on a global scale.</p>
+            
+            <div class="highlight-box">
+                <p>💡 <strong>Featured Tool:</strong> I design custom digital diagnostic interfaces—such as the <a href="https://pablomr.shinyapps.io/acalypha-identification-keys/" target="_blank">Acalypha Species Identification System</a>—to help experts and enthusiasts resolve plant ID bottlenecks dynamically.</p>
+            </div>
 
-            <p>I focus on creating interactive digital diagnostic systems—such as the <a href="https://pablomr.shinyapps.io/acalypha-identification-keys/" target="_blank">Acalypha Species Identification System</a>—to help researchers and enthusiasts identify complex plant groups dynamically.</p>
+            <p>Through coding and field collection, I build tools that democratize taxonomic expertise and analyze critical biogeographical patterns across complex global plant families.</p>
         </div>
     </div>
 
