@@ -109,45 +109,27 @@ nav a:hover, nav a.active {
 }
 
 .links {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
 }
 
-/* Badges styling */
-.badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.links a { 
+    display: inline-block;
     width: fit-content;
+    transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.badge-orcid {
-    background-color: #a6ce39;
-    color: #ffffff;
+.links img {
+    display: block;
+    height: 26px; /* Keeps them matching and highly legible */
+    width: auto;
 }
 
-.badge-scholar {
-    background-color: #4285f4;
-    color: #ffffff;
-}
-
-.badge img {
-    height: 16px;
-    width: 16px;
-    filter: brightness(0) invert(1); /* Makes the SVGs clean white */
-}
-
-.badge:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.links a:hover { 
+    transform: translateY(-2px);
+    filter: brightness(1.05); /* Slight bright flash on hover */
 }
 
 /* Right Content Area: 72% width */
