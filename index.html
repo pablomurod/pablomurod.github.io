@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Muñoz-Rodríguez</title>
+    <!-- Clean, modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; color: #2d3748; background-color: #f7fafc; line-height: 1.6; }
+        
+        /* Menu on top */
+        header { background: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 1.5rem 5%; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 700; font-size: 1.2rem; color: #1a202c; text-decoration: none; }
+        nav a { margin-left: 2rem; text-decoration: none; color: #4a5568; font-weight: 500; }
+        nav a:hover { color: #1a202c; }
+
+        /* Full page, asymmetric two-column layout */
+        .container { display: flex; min-height: calc(100vh - 80px); padding: 5%; gap: 5%; max-width: 1600px; margin: 0 auto; }
+        
+        /* Left Column (30% width) */
+        .left-col { flex: 0 0 30%; border-right: 1px solid #e2e8f0; padding-right: 5%; }
+        .profile-img { width: 100%; max-width: 280px; border-radius: 8px; margin-bottom: 1.5rem; }
+        .left-col h1 { font-size: 1.8rem; margin-bottom: 0.5rem; color: #1a202c; }
+        .subtitle { color: #718096; margin-bottom: 1.5rem; }
+        .links a { display: block; margin-bottom: 0.5rem; color: #3182ce; text-decoration: none; }
+        
+        /* Right Column (70% width) */
+        .right-col { flex: 1; padding-left: 2%; }
+        .right-col h2 { font-size: 2rem; margin-bottom: 1.5rem; color: #1a202c; }
+        .right-col p { margin-bottom: 1.2rem; font-size: 1.1rem; color: #4a5568; }
+        
+        @media (max-width: 768px) {
+            .container { flex-direction: column; }
+            .left-col { border-right: none; padding-right: 0; border-bottom: 1px solid #e2e8f0; padding-bottom: 2rem; margin-bottom: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">PMR</a>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Publications</a>
+            <a href="#">Projects</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- LEFT COLUMN (30%) -->
+        <div class="left-col">
+            <img src="assets/img/prof_pic.jpg" alt="Pablo" class="profile-img">
+            <h1>Pablo Muñoz-Rodríguez</h1>
+            <p class="subtitle">Scientific Researcher</p>
+            <div class="links">
+                <a href="https://orcid.org/0000-0002-3580-8136" target="_blank">ORCID Profile</a>
+                <a href="https://scholar.google.com/citations?user=fl0V-DkAAAAJ" target="_blank">Google Scholar</a>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN (70%) -->
+        <div class="right-col">
+            <h2>Biography</h2>
+            <p>I am a scientific researcher specializing in botany, plant systematics, and computational tools.</p>
+            <p>My work integrates traditional botanical taxonomy with interactive software design, aiming to make species identification accessible and dynamic.</p>
+        </div>
+    </div>
+
+</body>
+</html>
