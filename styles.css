@@ -1,12 +1,12 @@
 /* Global Setup & CSS Variables for Colors and Typography */
 :root {
-    --bg-color: #fcfbfa;       /* Very soft warm off-white */
-    --sidebar-bg: #f4f3ee;     /* Warm, natural clay/sand tint for asymmetrical contrast */
-    --text-main: #2b2927;      /* Gentle dark charcoal */
-    --text-muted: #6b6965;     /* Slate grey */
-    --accent-color: #214e34;   /* Deep organic botanical green */
-    --accent-light: #e8f0eb;   /* Soft mint highlight */
-    --border-color: #e6e3dc;   /* Soft warm border line */
+    --bg-color: #fcfbfa;       
+    --sidebar-bg: #f4f3ee;     
+    --text-main: #2b2927;      
+    --text-muted: #6b6965;     
+    --accent-color: #214e34;   
+    --accent-light: #e8f0eb;   
+    --border-color: #e6e3dc;   
     --font-sans: 'Plus Jakarta Sans', sans-serif;
     --font-serif: 'Playfair Display', serif;
 }
@@ -25,7 +25,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Top Navigation Menu with a clean border */
+/* Top Navigation Menu */
 header { 
     background: #ffffff; 
     border-bottom: 2px solid var(--accent-light); 
@@ -69,7 +69,7 @@ nav a:hover, nav a.active {
     padding: 0;
 }
 
-/* Left Sidebar: 28% width with a soft background wash */
+/* Left Sidebar: 28% width */
 .left-col { 
     flex: 0 0 28%; 
     background-color: var(--sidebar-bg);
@@ -79,12 +79,12 @@ nav a:hover, nav a.active {
     flex-direction: column;
 }
 
-/* Small, humble circular profile picture */
+/* Friendly circular profile picture */
 .profile-img { 
     width: 130px; 
     height: 130px;
     object-fit: cover;
-    border-radius: 50%; /* Friendly, circular cut */
+    border-radius: 50%; 
     margin-bottom: 1.5rem; 
     border: 3px solid #ffffff;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
@@ -116,7 +116,7 @@ nav a:hover, nav a.active {
 }
 
 .links {
-    margin-top: auto; /* Pushes badges neatly to the bottom of the column if content is short */
+    margin-top: auto; 
     padding-top: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -173,21 +173,6 @@ nav a:hover, nav a.active {
     color: var(--text-main);
 }
 
-/* Highlighted box for research/tools */
-.highlight-box {
-    background-color: var(--accent-light);
-    border-left: 4px solid var(--accent-color);
-    padding: 1.5rem;
-    border-radius: 0 8px 8px 0;
-    margin: 2.5rem 0;
-}
-
-.highlight-box p {
-    margin-bottom: 0;
-    color: var(--accent-color);
-    font-size: 1.05rem;
-}
-
 /* Section Title */
 .section-title {
     font-family: var(--font-serif);
@@ -197,7 +182,7 @@ nav a:hover, nav a.active {
     margin-bottom: 1.5rem;
 }
 
-/* Modern list styling for Interests */
+/* Classic List Styling (No AI icon-boxes) */
 .interests-list {
     list-style: none;
     display: flex;
@@ -206,23 +191,8 @@ nav a:hover, nav a.active {
 }
 
 .interests-list li {
-    display: flex;
-    gap: 1.2rem;
-    align-items: flex-start;
-}
-
-.interest-icon {
-    font-size: 1.6rem;
-    background: #ffffff;
-    border: 1px solid var(--border-color);
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
-    flex-shrink: 0;
+    padding-left: 1.2rem;
+    border-left: 2px solid var(--accent-color);
 }
 
 .interests-list strong {
@@ -238,7 +208,7 @@ nav a:hover, nav a.active {
     margin-bottom: 0;
 }
 
-/* Responsive adjustments for mobile screens */
+/* Responsive adjustments */
 @media (max-width: 992px) {
     .container { 
         flex-direction: column; 
