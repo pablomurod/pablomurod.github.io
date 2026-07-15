@@ -12,6 +12,7 @@
 <body>
 
     <header>
+        <!-- Top Left: Elegant full name -->
         <a href="#" class="logo">Pablo Muñoz-Rodríguez</a>
         <nav>
             <a href="#" class="active">About</a>
@@ -23,17 +24,21 @@
     <div class="container">
         <!-- LEFT COLUMN (Asymmetric Sidebar with friendly Bio-card setup) -->
         <div class="left-col">
-            <!-- Circular portrait picture -->
-            <img src="assets/img/pablomr.jpg" alt="Pablo Muñoz-Rodríguez" class="profile-img">
-                                 
+            <!-- Circular, humble portrait -->
+            <img src="assets/img/prof_pic.jpg" alt="Pablo Muñoz-Rodríguez" class="profile-img">
+            
+            <h1>Pablo Muñoz-Rodríguez</h1>
+            <p class="subtitle">Scientific Researcher</p>
+            <p class="affiliation">Ramón y Cajal Fellow<br>Universidad Complutense de Madrid</p>
+            
             <div class="links">
                 <!-- ORCID Badge -->
-                <a href="https://orcid.org/0000-0002-3580-8136" target="_blank">
+                <a href="https://orcid.org/0000-0002-3580-8136" target="_blank" class="badge-link">
                     <img src="https://img.shields.io/badge/ORCID-0000--0002--3580--8136-A6CE39?style=flat&logo=orcid&logoColor=white" alt="ORCID Profile">
                 </a>
                 
                 <!-- Google Scholar Badge -->
-                <a href="https://scholar.google.com/citations?user=fl0V-DkAAAAJ" target="_blank">
+                <a href="https://scholar.google.com/citations?user=fl0V-DkAAAAJ" target="_blank" class="badge-link">
                     <img src="https://img.shields.io/badge/Google%20Scholar-Profile-4285F4?style=flat&logo=google-scholar&logoColor=white" alt="Google Scholar Profile">
                 </a>
             </div>
@@ -42,15 +47,38 @@
         <!-- RIGHT COLUMN (Main Content) -->
         <div class="right-col">
             <h2>Biography</h2>
-            <p>I am a scientific researcher specializing in botany, plant systematics, and computational evolutionary tools.</p>
+            <p>I am a scientist working on the taxonomy and systematics of poorly known tropical plant groups, mainly morning glories (<em>Ipomoea</em>, Convolvulaceae) and <em>Acalypha</em> (Euphorbiaceae), with a focus on the origin and evolution of the sweet potato and other plants of economic interest 🌱.</p>
             
-            <p>My work integrates traditional botanical taxonomy with interactive software design, aiming to make species identification accessible, dynamic, and reproducible on a global scale.</p>
+            <p>My work integrates traditional botanical taxonomy with molecular phylogenomics and interactive software design, aiming to make complex species identification accessible, dynamic, and computational.</p>
             
             <div class="highlight-box">
-                <p>💡 <strong>Featured Tool:</strong> I design custom digital diagnostic interfaces—such as the <a href="https://pablomr.shinyapps.io/acalypha-identification-keys/" target="_blank">Acalypha Species Identification System</a>—to help experts and enthusiasts resolve plant ID bottlenecks dynamically.</p>
+                <p>💡 <strong>Interactive Keys:</strong> I develop dynamic diagnostic systems—such as the <a href="https://pablomr.shinyapps.io/acalypha-identification-keys/" target="_blank">Acalypha Species Identification System</a>—to help researchers and enthusiasts resolve plant identification bottlenecks instantly.</p>
             </div>
 
-            <p>Through coding and field collection, I build tools that democratize taxonomic expertise and analyze critical biogeographical patterns across complex global plant families.</p>
+            <h3 class="section-title">Research Interests</h3>
+            <ul class="interests-list">
+                <li>
+                    <span class="interest-icon">🧬</span>
+                    <div>
+                        <strong>Plant Systematics, Phylogenomics & Taxonomy</strong>
+                        <p>Using DNA sequencing and classic morphology to untangle evolutionary histories in complex plant genera.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="interest-icon">🍠</span>
+                    <div>
+                        <strong>Crop Evolution & Domestication</strong>
+                        <p>Investigating how crops like sweet potato originated, evolved, and spread across the globe.</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="interest-icon">📊</span>
+                    <div>
+                        <strong>Plant Uses & Biodiversity Data</strong>
+                        <p>Synthesizing large-scale distribution data to optimize conservation guidelines and taxonomy systems.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 
