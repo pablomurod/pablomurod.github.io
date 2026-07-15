@@ -112,7 +112,35 @@ nav a:hover, nav a.active {
     font-size: 0.9rem;
     color: var(--text-muted);
     line-height: 1.4;
+    margin-bottom: 1.5rem;
+}
+
+/* Differentiated Sidebar Callout Card */
+.sidebar-quote {
+    background-color: #ffffff;
+    border-left: 3px solid var(--accent-color);
+    padding: 1.1rem;
+    border-radius: 0 8px 8px 0;
     margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.sidebar-quote p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--text-main);
+    margin: 0;
+}
+
+.sidebar-quote a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-weight: 600;
+}
+
+.sidebar-quote a:hover {
+    color: var(--text-main);
 }
 
 .links {
@@ -220,6 +248,11 @@ nav a:hover, nav a.active {
         padding: 8% 5%; 
         align-items: center;
         text-align: center;
+    }
+    .sidebar-quote {
+        max-width: 450px;
+        margin: 1.5rem auto;
+        text-align: left;
     }
     .links {
         align-items: center;
