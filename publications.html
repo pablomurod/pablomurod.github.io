@@ -3,88 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pablo Muñoz-Rodríguez</title>
-    <!-- Modern typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- Link to our independent stylesheet -->
+    <title>Publications | Pablo Muñoz-Rodríguez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght=0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <!-- Top Left: Elegant full name -->
-        <a href="#" class="logo">PMR</a>
-        <nav>
-            <a href="#" class="active">About</a>
-            <a href="#publications">Publications</a>
-            <a href="#projects">Projects</a>
-        </nav>
+    <!-- GLOBAL TOP HEADER (Consistent across all pages) -->
+    <header class="global-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">Pablo Muñoz-Rodríguez</a>
+            <nav class="nav-links">
+                <a href="index.html">About Me</a>
+                <a href="publications.html" class="active">Publications</a>
+                <a href="https://pablomurod.github.io/web" target="_blank">Interactive Keys</a>
+            </nav>
+        </div>
     </header>
 
-    <div class="container">
-        <!-- LEFT COLUMN -->
-        <div class="left-col">
-            <!-- Circular portrait picture -->
-            <img src="images/pablomr.png" alt="profile picture" class="profile-img">
+    <!-- MAIN CONTENT CONTAINER -->
+    <div class="container page-content">
+        
+        <!-- INTRO HERO SECTION -->
+        <section class="intro-hero">
+            <h1 class="page-title">Publications</h1>
+            <p class="section-intro">Chronological archive of peer-reviewed articles, books, and systematic treatments.</p>
+        </section>
+
+        <!-- =================== FEATURED RESEARCH (FLOATING CARDS) =================== -->
+        <section class="featured-section">
+            <h2 class="section-subtitle">Featured High-Impact Works</h2>
             
-            <h1>Pablo Muñoz-Rodríguez</h1>
-            <p class="subtitle">Ramón y Cajal Researcher</p>
-            <p class="affiliation">Universidad Complutense de Madrid</p>
-            <br\>
-            <div class="sidebar-quote">
-                <p>The science, the pain-staking taxonomy of identifying and recording many known specimens in a species and creating a monograph, is unadulterated, hard-core botany. It may not be good TV, but it is fundamental and good science.</p>
-                <a href="https://web.archive.org/web/20251211005327/https://www.ox.ac.uk/news/science-blog/plants-known-unknowns-which-are-undermining-conservation" target="_blank"><i>Plants: the known unknowns which are undermining conservation</i></a>
-            </div>
-            
-            <div class="links">
-                <!-- ORCID Badge -->
-                <a href="https://orcid.org/0000-0002-3580-8136" target="_blank" class="badge-link">
-                    <img src="https://img.shields.io/badge/ORCID-0000--0002--3580--8136-A6CE39?style=flat&logo=orcid&logoColor=white" alt="ORCID Profile">
-                </a>
+            <div class="featured-cards-grid">
                 
-                <!-- Google Scholar Badge -->
-                <a href="https://scholar.google.com/citations?user=fl0V-DkAAAAJ" target="_blank" class="badge-link">
-                    <img src="https://img.shields.io/badge/Google%20Scholar-Profile-4285F4?style=flat&logo=google-scholar&logoColor=white" alt="Google Scholar Profile">
-                </a>
+                <!-- Nature Plants Card -->
+                <div class="floating-card highlight-nature">
+                    <div class="card-header">
+                        <span class="journal-tag tag-nature">Nature Plants</span>
+                        <span class="year-tag">2019</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">A taxonomic monograph of Ipomoea integrated across phylogenetic scales</h3>
+                        <p class="card-authors">P. Muñoz-Rodríguez, T. Carruthers, J.R.I. Wood, et al.</p>
+                        <p class="card-excerpt">Integrating a comprehensive taxonomic monograph of the sweet potato genus with phylogenetic sequencing to resolve key evolutionary lineages.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://doi.org/10.1038/s41477-019-0535-4" target="_blank" class="card-action-btn">Read Publication <span class="arrow">→</span></a>
+                    </div>
+                </div>
+
+                <!-- Current Biology Card -->
+                <div class="floating-card highlight-biology">
+                    <div class="card-header">
+                        <span class="journal-tag tag-biology">Current Biology</span>
+                        <span class="year-tag">2018</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Reconciling conflicting phylogenies in the origin of sweet potato and dispersal to Polynesia</h3>
+                        <p class="card-authors">P. Muñoz-Rodríguez, T. Carruthers, J.R.I. Wood, et al.</p>
+                        <p class="card-excerpt">Using genomic data to settle the historic debate surrounding the pre-human origin of sweet potato and its dispersal across Polynesia.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://doi.org/10.1016/j.cub.2018.03.020" target="_blank" class="card-action-btn">Read Publication <span class="arrow">→</span></a>
+                    </div>
+                </div>
+
             </div>
-        </div>
+        </section>
 
-        <!-- RIGHT COLUMN (Main Content) -->
-        <div class="right-col">
-            <p>I am a scientist working on the taxonomy and systematics of poorly known tropical plant groups, mainly morning glories (<em>Ipomoea</em>, Convolvulaceae) and <em>Acalypha</em> (Euphorbiaceae), with a focus on the origin and evolution of the sweet potato and other plants of economic interest.</p>
-            <p>I lead a small research team at Universidad Complutense de Madrid, Spain, and collaborate with researchers worldwide, working not only on plant taxonomy but also across disciplines that enhance our understanding of the natural world. Our work integrates taxonomy with phylogenomics, aiming to better understand the world's biodiversity.</p>
-            <p>This is an exciting time for our work, and I am always open to collaborations with colleagues, institutions, and industry partners. Please use the menu on top to navigate through this website and learn the different projects I am involved in. If you’re a prospective student, postdoc, or researcher interested in joining our team, or if you have ideas for collaboration, I’d love to hear from you!</p>
+        <!-- =================== ALL PUBLICATIONS (ELEGANT TIMELINE CARDS) =================== -->
+        <section class="timeline-section">
+            <h2 class="section-subtitle">Chronological Bibliography</h2>
+            
+            <div class="timeline-container">
 
-            <h3 class="section-title">Research Interests</h3>
-            <ul class="interests-list">
-                <li>
-                    <span class="interest-icon">🧬</span>
-                    <div>
-                        <strong>Plant Systematics, Taxonomy & Phylogenomics</strong>
-                        <p>Using DNA sequencing and morphology to untangle evolutionary histories and species boundaries in megadiverse plant genera.</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="interest-icon">🍠</span>
-                    <div>
-                        <strong>Crop Evolution & Domestication</strong>
-                        <p>Investigating how plants of economic importance such as sweet potato originated, evolved, and spread across the Globe.</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="interest-icon">📊</span>
-                    <div>
-                        <strong>Plant Uses & Biodiversity Data</strong>
-                        <p>Develop new tools to integrate our taxonomic expertise and global biodiversity databases to improve species knowledge.</p>
-                    </div>
-                </li>
-            </ul>
+                <!-- 2026 -->
+                <div class="timeline-block">
+                    <div class="timeline-year">2026</div>
+                    <div class="timeline-cards">
+                        
+                        <div class="timeline-card">
+                            <div class="timeline-card-meta">
+                                <span class="type-tag">Research Article</span>
+                                <span class="journal-name">Phytokeys 270: 119-142</span>
+                            </div>
+                            <h4 class="timeline-card-title">Revisiting Acalypha medicinal interest: ethnobotany, experimental studies, and the implications of taxonomic misuse pitfalls</h4>
+                            <p class="timeline-card-authors">Villaescusa-González, L., J.M. Cardiel, I. Montero & P. Muñoz-Rodríguez</p>
+                            <a href="https://doi.org/10.3897/phytokeys.270.169087" target="_blank" class="doi-pill">DOI Link</a>
+                        </div>
 
-            <div class="group-photo-container">
-                <img src="images/group_pic.jpg" alt="researchers in the field" class="group-img">
-                <p class="group-caption">Some members of our group during fieldwork in Spring 2026.</p>
+                        <div class="timeline-card">
+                            <div class="timeline-card-meta">
+                                <span class="type-tag">Taxonomic Treatment</span>
+                                <span class="journal-name">Phytotaxa 739(1): 35-57</span>
+                            </div>
+                            <h4 class="timeline-card-title">Synopsis of Acalypha (Euphorbiaceae) of the West Indies (Caribbean Region), with a focus on endemic species</h4>
+                            <p class="timeline-card-authors">Cardiel, J.M., I. Sancho-García, I. Montero-Muñoz, et al.</p>
+                            <a href="https://doi.org/10.11646/phytotaxa.739.1.2" target="_blank" class="doi-pill">DOI Link</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 2025 -->
+                <div class="timeline-block">
+                    <div class="timeline-year">2025</div>
+                    <div class="timeline-cards">
+                        
+                        <div class="timeline-card">
+                            <div class="timeline-card-meta">
+                                <span class="type-tag">Research Article</span>
+                                <span class="journal-name">PLOS One 20(10): e0332588</span>
+                            </div>
+                            <h4 class="timeline-card-title">Three new species of Acalypha L. (Euphorbiaceae, Acalyphoideae) from Tanzania and Angola and their conservation status</h4>
+                            <p class="timeline-card-authors">Montero-Muñoz, I., J.M. Cardiel, L. Villaescusa-González & P. Muñoz-Rodríguez</p>
+                            <a href="https://doi.org/10.1371/journal.pone.0332588" target="_blank" class="doi-pill">DOI Link</a>
+                        </div>
+
+                        <div class="timeline-card">
+                            <div class="timeline-card-meta">
+                                <span class="type-tag">Research Article</span>
+                                <span class="journal-name">TAXON 74(5): 1217-1247</span>
+                            </div>
+                            <h4 class="timeline-card-title">A nomenclatural review of Acalypha (Euphorbiaceae) of mainland Africa</h4>
+                            <p class="timeline-card-authors">Cardiel, J.M., I. Montero-Muñoz, R. Gamarra, E. Ortúñez & P. Muñoz-Rodríguez</p>
+                            <a href="https://doi.org/10.1002/tax.13388" target="_blank" class="doi-pill">DOI Link</a>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
-        </div>
+        </section>
+
     </div>
 
 </body>
