@@ -69,7 +69,7 @@ nav a:hover, nav a.active {
     padding: 0;
 }
 
-/* Left Sidebar: 28% width & warm gray background */
+/* Left Sidebar */
 .left-col { 
     flex: 0 0 28%; 
     background-color: var(--sidebar-bg);
@@ -112,6 +112,35 @@ nav a:hover, nav a.active {
     color: var(--text-muted);
     line-height: 1.4;
     margin-bottom: 1.5rem;
+}
+
+/* Right Sidebar settings */
+
+/* Group Photo Styling */
+.group-photo-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.group-img {
+    width: 100%;
+    max-width: 500px; /* 👈 This limits how wide the picture can get */
+    height: auto;
+    object-fit: cover; 
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.group-caption {
+    font-size: 0.9rem !important;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 0.2rem;
+    margin-bottom: 0 !important;
+    max-width: 500px; /* 👈 Keeps the caption text perfectly aligned with the image width */
 }
 
 /* ==========================================================================
