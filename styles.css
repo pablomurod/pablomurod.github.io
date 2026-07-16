@@ -125,6 +125,50 @@ nav a:hover, nav a.active {
 
 /* Right Sidebar settings */
 
+/* Home Page Research Interests List Layout */
+.section-title {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    color: var(--text-main);
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.interests-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+}
+
+.interests-list li {
+    display: flex;          /* Allows emoji and text to sit side-by-side */
+    gap: 1.2rem;            /* Spacing between the emoji and the text block */
+    align-items: flex-start;
+    padding-left: 0;
+    border-left: none;      /* Making sure no old border styles conflict */
+}
+
+.interest-icon {
+    font-size: 1.4rem;      /* Clean sizing for your list emojis */
+    line-height: 1.2;
+    padding-top: 0.2rem;    /* Nudges the emoji down slightly to align with title */
+}
+
+.interests-list strong {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.interests-list p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 0 !important;
+}
+
 /* Group Photo Styling */
 .group-photo-container {
     margin-top: 2rem;
