@@ -126,7 +126,7 @@ nav a:hover, nav a.active {
 
 .group-img {
     width: 100%;
-    max-width: 500px; /* 👈 This limits how wide the picture can get */
+    max-width: 1000px;
     height: auto;
     object-fit: cover; 
     border-radius: 8px;
@@ -140,7 +140,7 @@ nav a:hover, nav a.active {
     font-style: italic;
     margin-top: 0.2rem;
     margin-bottom: 0 !important;
-    max-width: 500px; /* 👈 Keeps the caption text perfectly aligned with the image width */
+    max-width: 500px;
 }
 
 /* ==========================================================================

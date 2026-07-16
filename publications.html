@@ -26,23 +26,14 @@
         
         <!-- LEFT COL: Interactive Control Center (Sidebar Background) -->
         <aside class="left-col">
-            <img src="images/pablomr.png" alt="Pablo Muñoz-Rodríguez" class="profile-img">
-            <h1>Pablo Muñoz-Rodríguez</h1>
-            <div class="subtitle">Ramón y Cajal Researcher</div>
-            <div class="affiliation">Universidad Complutense de Madrid</div>
+            <h1>Publications</h1>
 
             <!-- INTERACTIVE VIEW SWITCHER DECK -->
             <div class="pub-switcher">
                 <span class="switcher-title">View Publications</span>
-                <button class="switch-btn active" onclick="switchPubView('featured')">★ Featured Works</button>
-                <button class="switch-btn" onclick="switchPubView('archive')">📂 Chronological Archive</button>
-            </div>
-
-            <!-- Keep badge links synced at bottom -->
-            <div class="links">
-                <a href="#" class="badge-link"><img src="https://img.shields.io/badge/ORCID-0000--0002--3580--8136-a6ce39?style=flat-square&logo=orcid" alt="ORCID"></a>
-                <a href="#" class="badge-link"><img src="https://img.shields.io/badge/Google%20Scholar-Profile-blue?style=flat-square" alt="Google Scholar"></a>
-            </div>
+                <button class="switch-btn active" onclick="switchPubView('featured')">★ Featured publications</button>
+                <button class="switch-btn" onclick="switchPubView('archive')">Archive</button>
+            </div>         
         </aside>
 
         <!-- RIGHT COL: Dynamic Window Panel (Main Canvas Background) -->
@@ -53,7 +44,19 @@
                 <h2>Featured Publications</h2>
                 
                 <div class="featured-cards-grid">
-                    <!-- Nature Plants Card -->
+                    <!-- Card -->
+                    <div class="floating-card highlight-biology">
+                        <div class="card-header">
+                            <span class="journal-tag tag-biology">New Phytologist</span>
+                            <span class="year-tag">2022</span>
+                        </div>
+                        <h3 class="card-title">Discovery and characterisation of sweetpotato’s closest tetraploid relative</h3>
+                        <p class="card-authors">P. Muñoz-Rodríguez, T. Wells, et al.</p>
+                        <p class="card-excerpt">This study identifies <i>Ipomoea aequatoriensis</i> as a new autotetraploid species from Ecuador, the closest wild relative of sweetpotato and likely the direct descendant of its tetraploid progenitor, distinguishing it from modern hybrid tetraploids.</p>
+                        <a href="https://doi.org/10.1111/nph.17991" target="_blank" class="card-action-btn">Read Publication <span class="arrow">→</span></a>
+                    </div>
+					
+					<!-- Card -->
                     <div class="floating-card highlight-nature">
                         <div class="card-header">
                             <span class="journal-tag tag-nature">Nature Plants</span>
@@ -65,7 +68,7 @@
                         <a href="https://doi.org/10.1038/s41477-019-0535-4" target="_blank" class="card-action-btn">Read Publication <span class="arrow">→</span></a>
                     </div>
 
-                    <!-- Current Biology Card -->
+                    <!-- Card -->
                     <div class="floating-card highlight-biology">
                         <div class="card-header">
                             <span class="journal-tag tag-biology">Current Biology</span>
@@ -76,6 +79,19 @@
                         <p class="card-excerpt">Settling the historic debate surrounding the pre-human origin of sweet potato and dispersal to Polynesia.</p>
                         <a href="https://doi.org/10.1016/j.cub.2018.03.020" target="_blank" class="card-action-btn">Read Publication <span class="arrow">→</span></a>
                     </div>
+					
+					<!-- Card -->
+                    <div class="floating-card highlight-biology">
+                        <div class="card-header">
+                            <span class="journal-tag tag-biology">Current Biology</span>
+                            <span class="year-tag">2018</span>
+                        </div>
+                        <h3 class="card-title">Reconciling conflicting phylogenies in the origin of sweet potato</h3>
+                        <p class="card-authors">P. Muñoz-Rodríguez, T. Carruthers, et al.</p>
+                        <p class="card-excerpt">Settling the historic debate surrounding the pre-human origin of sweet potato and dispersal to Polynesia.</p>
+                        <a href="https://doi.org/10.1016/j.cub.2018.03.020" target="_blank" class="card-action-btn">Read Publication <span class="arrow">→</span></a>
+                    </div>						
+					
                 </div>
             </div>
 
