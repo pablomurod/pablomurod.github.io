@@ -22,22 +22,18 @@
     <!-- TWO COLUMN LAYOUT CONTINUITY -->
     <div class="container">
         
-        <!-- LEFT COL: Converted into an Interactive Section Filter -->
+        <!-- LEFT COL: Interactive Control Center (Sidebar Background) -->
         <aside class="left-col">
-            <img src="your-profile-image.jpg" alt="Pablo Muñoz-Rodríguez" class="profile-img">
+            <img src="pablomr.png" alt="Pablo Muñoz-Rodríguez" class="profile-img">
             <h1>Pablo Muñoz-Rodríguez</h1>
             <div class="subtitle">Ramón y Cajal Researcher</div>
             <div class="affiliation">Universidad Complutense de Madrid</div>
 
-            <!-- Jump-To Sidebar Filter Menu -->
-            <div class="sidebar-quote pub-nav-filters">
-                <p><strong>Filter Archive</strong></p>
-                <ul class="pub-filter-list">
-                    <li><a href="#featured-section">★ Featured Work</a></li>
-                    <li><a href="#year-2026">↳ Year 2026</a></li>
-                    <li><a href="#year-2025">↳ Year 2025</a></li>
-                    <li><a href="#year-2024">↳ Year 2024</a></li>
-                </ul>
+            <!-- INTERACTIVE VIEW SWITCHER DECK -->
+            <div class="pub-switcher">
+                <span class="switcher-title">View Publications</span>
+                <button class="switch-btn active" onclick="switchPubView('featured')">★ Featured Works</button>
+                <button class="switch-btn" onclick="switchPubView('archive')">📂 Chronological Archive</button>
             </div>
 
             <!-- Keep badge links synced at bottom -->
@@ -47,95 +43,114 @@
             </div>
         </aside>
 
-        <!-- RIGHT COL: Split-Screen Content Layout -->
+        <!-- RIGHT COL: Dynamic Window Panel (Main Canvas Background) -->
         <main class="right-col">
             
-            <div class="publications-split-view">
+            <!-- PANE 1: ELEVATED HIGH-IMPACT FEATURED CARDS (Active by default) -->
+            <div id="featured-pane" class="pub-pane active">
+                <h2>Featured Publications</h2>
                 
-                <!-- LEFT HALF: FEATURED HIGHLIGHTS (Static) -->
-                <div class="split-pane-featured" id="featured-section">
-                    <h2 class="section-title-clean">Featured High-Impact Works</h2>
-                    
-                    <div class="featured-column-stack">
-                        <!-- Nature Plants -->
-                        <div class="floating-card highlight-nature">
-                            <div class="card-header">
-                                <span class="journal-tag tag-nature">Nature Plants</span>
-                                <span class="year-tag">2019</span>
-                            </div>
-                            <h3 class="card-title">A taxonomic monograph of Ipomoea integrated across phylogenetic scales</h3>
-                            <p class="card-authors">P. Muñoz-Rodríguez, T. Carruthers, et al.</p>
-                            <p class="card-excerpt">Integrating a comprehensive taxonomic monograph of the sweet potato genus with phylogenetic sequencing.</p>
-                            <a href="https://doi.org/10.1038/s41477-019-0535-4" target="_blank" class="card-action-btn">Read Publication <span class="arrow">→</span></a>
+                <div class="featured-cards-grid">
+                    <!-- Nature Plants Card -->
+                    <div class="floating-card highlight-nature">
+                        <div class="card-header">
+                            <span class="journal-tag tag-nature">Nature Plants</span>
+                            <span class="year-tag">2019</span>
                         </div>
+                        <h3 class="card-title">A taxonomic monograph of Ipomoea integrated across phylogenetic scales</h3>
+                        <p class="card-authors">P. Muñoz-Rodríguez, T. Carruthers, et al.</p>
+                        <p class="card-excerpt">Integrating a comprehensive taxonomic monograph of the sweet potato genus with phylogenetic sequencing.</p>
+                        <a href="https://doi.org/10.1038/s41477-019-0535-4" target="_blank" class="card-action-btn">Read Publication <span class="arrow">→</span></a>
+                    </div>
 
-                        <!-- Current Biology -->
-                        <div class="floating-card highlight-biology">
-                            <div class="card-header">
-                                <span class="journal-tag tag-biology">Current Biology</span>
-                                <span class="year-tag">2018</span>
-                            </div>
-                            <h3 class="card-title">Reconciling conflicting phylogenies in the origin of sweet potato</h3>
-                            <p class="card-authors">P. Muñoz-Rodríguez, T. Carruthers, et al.</p>
-                            <p class="card-excerpt">Settling the historic debate surrounding the pre-human origin of sweet potato and dispersal to Polynesia.</p>
-                            <a href="https://doi.org/10.1016/j.cub.2018.03.020" target="_blank" class="card-action-btn">Read Publication <span class="arrow">→</span></a>
+                    <!-- Current Biology Card -->
+                    <div class="floating-card highlight-biology">
+                        <div class="card-header">
+                            <span class="journal-tag tag-biology">Current Biology</span>
+                            <span class="year-tag">2018</span>
                         </div>
+                        <h3 class="card-title">Reconciling conflicting phylogenies in the origin of sweet potato</h3>
+                        <p class="card-authors">P. Muñoz-Rodríguez, T. Carruthers, et al.</p>
+                        <p class="card-excerpt">Settling the historic debate surrounding the pre-human origin of sweet potato and dispersal to Polynesia.</p>
+                        <a href="https://doi.org/10.1016/j.cub.2018.03.020" target="_blank" class="card-action-btn">Read Publication <span class="arrow">→</span></a>
                     </div>
                 </div>
+            </div>
 
-                <!-- RIGHT HALF: COMPLETE SCROLLBAR BIBLIOGRAPHY -->
-                <div class="split-pane-archive">
-                    <h2 class="section-title-clean">Chronological Bibliography</h2>
+            <!-- PANE 2: CHRONOLOGICAL ARCHIVE WITH VERTICAL GEOMETRIC LINE GRAPH -->
+            <div id="archive-pane" class="pub-pane">
+                <h2>Chronological Bibliography</h2>
+                
+                <div class="timeline-axis-wrapper">
                     
-                    <div class="scrollable-bibliography-box">
+                    <!-- 2026 Timeline Node Block -->
+                    <div class="timeline-year-group">
+                        <div class="timeline-year-node">
+                            <span class="timeline-axis-year-title">2026</span>
+                        </div>
                         
-                        <!-- 2026 -->
-                        <div id="year-2026" class="archive-timeline-group">
-                            <div class="timeline-inline-year">2026</div>
-                            
-                            <div class="timeline-card">
-                                <div class="timeline-card-meta">
-                                    <span class="type-tag">Research Article</span>
-                                    <span class="journal-name">Phytokeys 270: 119-142</span>
+                        <div class="timeline-records-stack">
+                            <div class="archive-row-item">
+                                <div class="item-meta-row">
+                                    <span class="item-type-label">Research Article</span>
+                                    <span class="item-journal-title">Phytokeys 270: 119-142</span>
                                 </div>
-                                <h4 class="timeline-card-title">Revisiting Acalypha medicinal interest: ethnobotany, experimental studies...</h4>
-                                <p class="timeline-card-authors">Villaescusa-González, L., et al.</p>
-                                <a href="https://doi.org/10.3897/phytokeys.270.169087" target="_blank" class="doi-pill">DOI Link</a>
+                                <h4 class="item-publication-title">Revisiting Acalypha medicinal interest: ethnobotany, experimental studies...</h4>
+                                <p class="item-authors-list">Villaescusa-González, L., et al.</p>
+                                <a href="https://doi.org/10.3897/phytokeys.270.169087" target="_blank" class="item-doi-link">DOI Link</a>
                             </div>
 
-                            <div class="timeline-card">
-                                <div class="timeline-card-meta">
-                                    <span class="type-tag">Taxonomic Treatment</span>
-                                    <span class="journal-name">Phytotaxa 739(1): 35-57</span>
+                            <div class="archive-row-item">
+                                <div class="item-meta-row">
+                                    <span class="item-type-label">Taxonomic Treatment</span>
+                                    <span class="item-journal-title">Phytotaxa 739(1): 35-57</span>
                                 </div>
-                                <h4 class="timeline-card-title">Synopsis of Acalypha (Euphorbiaceae) of the West Indies...</h4>
-                                <p class="timeline-card-authors">Cardiel, J.M., et al.</p>
-                                <a href="https://doi.org/10.11646/phytotaxa.739.1.2" target="_blank" class="doi-pill">DOI Link</a>
+                                <h4 class="item-publication-title">Synopsis of Acalypha (Euphorbiaceae) of the West Indies...</h4>
+                                <p class="item-authors-list">Cardiel, J.M., et al.</p>
+                                <a href="https://doi.org/10.11646/phytotaxa.739.1.2" target="_blank" class="item-doi-link">DOI Link</a>
                             </div>
                         </div>
-
-                        <!-- 2025 -->
-                        <div id="year-2025" class="archive-timeline-group">
-                            <div class="timeline-inline-year">2025</div>
-                            
-                            <div class="timeline-card">
-                                <div class="timeline-card-meta">
-                                    <span class="type-tag">Research Article</span>
-                                    <span class="journal-name">PLOS One 20(10): e0332588</span>
-                                </div>
-                                <h4 class="timeline-card-title">Three new species of Acalypha L. from Tanzania and Angola...</h4>
-                                <p class="timeline-card-authors">Montero-Muñoz, I., et al.</p>
-                                <a href="https://doi.org/10.1371/journal.pone.0332588" target="_blank" class="doi-pill">DOI Link</a>
-                            </div>
-                        </div>
-
                     </div>
-                </div>
 
+                    <!-- 2025 Timeline Node Block -->
+                    <div class="timeline-year-group">
+                        <div class="timeline-year-node">
+                            <span class="timeline-axis-year-title">2025</span>
+                        </div>
+                        
+                        <div class="timeline-records-stack">
+                            <div class="archive-row-item">
+                                <div class="item-meta-row">
+                                    <span class="item-type-label">Research Article</span>
+                                    <span class="item-journal-title">PLOS One 20(10): e0332588</span>
+                                </div>
+                                <h4 class="item-publication-title">Three new species of Acalypha L. from Tanzania and Angola...</h4>
+                                <p class="item-authors-list">Montero-Muñoz, I., et al.</p>
+                                <a href="https://doi.org/10.1371/journal.pone.0332588" target="_blank" class="item-doi-link">DOI Link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
         </main>
     </div>
+
+    <!-- CLEAN TABS TOGGLE CONTROLLER -->
+    <script>
+        function switchPubView(viewId) {
+            // Hide all views
+            document.querySelectorAll('.pub-pane').forEach(pane => pane.classList.remove('active'));
+            // Remove active highlight state from layout buttons
+            document.querySelectorAll('.switch-btn').forEach(btn => btn.classList.remove('active'));
+            
+            // Render active view window targeting matching selected ID node
+            document.getElementById(viewId + '-pane').classList.add('active');
+            // Highlight current clicked target
+            event.currentTarget.classList.add('active');
+        }
+    </script>
 
 </body>
 </html>
