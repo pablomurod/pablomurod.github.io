@@ -89,5 +89,50 @@
         </div>
     </div>
 
+<!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <!-- Social & Academic Icons -->
+            <div class="footer-social-links">
+                <!-- Email -->
+                <a href="mailto:pablo.munoz@ucm.es" aria-label="Email" title="Email">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
+                
+                <!-- ORCID profile -->
+                <a href="https://orcid.org/0000-0002-3580-8136" target="_blank" rel="noopener" aria-label="ORCID" title="ORCID">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                </a>
+				
+				<!-- Google Scholar -->
+                <a href="https://scholar.google.com/citations?user=fl0V-DkAAAAJ&hl=es" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l12 9.5 12-9.5L12 0z"/></svg>
+                </a>
+                
+                <!-- Bluesky profile -->
+                <a href="https://bsky.app/profile/pablomurod.bsky.social" target="_blank" rel="noopener" aria-label="Bluesky" title="Bluesky">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566 1.01 0 2.196 0 5.15c0 2.47 1.258 8.877 2.08 10.518 1.112 2.22 3.864 2.825 5.86 1.83 2.19-1.092 3.06-3.14 4.06-5.698 1 2.558 1.87 4.606 4.06 5.698 1.996.995 4.748.39 5.86-1.83C22.742 14.027 24 7.62 24 5.15c0-2.954-2.566-4.14-5.202-2.345C16.046 4.747 13.087 8.686 12 10.8z"/></svg>
+                </a>
+
+                <!-- X profile -->
+                <a href="https://x.com/pablomurod/" target="_blank" rel="noopener" aria-label="X (Twitter)" title="X">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+            </div>
+
+            <!-- Copyright Notice -->
+            <div class="footer-copyright">
+                &copy; <span id="current-year"></span> Pablo Muñoz-Rodríguez. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        // Auto-update year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
 </body>
 </html>

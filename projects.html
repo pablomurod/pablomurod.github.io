@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Pablo Muñoz-Rodríguez</title>
+    <!-- Modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <a href="index.html" class="logo">PMR</a>
+        <nav>
+            <a href="index.html">Bio</a>
+            <a href="publications.html">Publications</a>
+            <a href="projects.html" class="active">Projects</a>
+        </nav>
+    </header>
+
+    <!-- MAIN TWO-COLUMN CONTAINER -->
+    <main class="container">
+        
+        <!-- LEFT SIDEBAR -->
+        <aside class="left-col">
+            <h1>Research Projects</h1>
+            
+            <!-- PROJECT SWITCHER PANEL -->
+            <div class="pub-switcher">
+                <button class="switch-btn active" onclick="switchProject('acalpharma', this)">ACALPHARMA</button>
+                <button class="switch-btn" onclick="switchProject('ipostor', this)">IPOSTOR</button>
+                <button class="switch-btn" onclick="switchProject('sweet-potato', this)">Sweet Potato</button>
+                <button class="switch-btn" onclick="switchProject('monographs', this)">Monographs Renaissance</button>
+            </div>          
+
+            <!-- FEATURED QUOTE CARD -->
+            <div class="sidebar-quote">
+                <p>As we navigate the complexities of the 21st century, it is imperative that taxonomists embrace an ambitious vision for our discipline. By increasing the visibility and relevance of our work, we can secure a prominent place for taxonomy within the broader scientific landscape.<br><br>
+                    We must actively engage in collaborative projects that transcend traditional boundaries, integrating taxonomy with other disciplines such as genomics, ecology, and conservation biology.</p>
+                <a href="https://www.taylorfrancis.com/chapters/edit/10.1201/b22822-7/bringing-taxonomy-back-spotlight-pablo-mu%C3%B1oz-rodr%C3%ADguez" target="_blank" rel="noopener"><i>Bringing taxonomy back into the spotlight (2025)</i></a>
+            </div>
+        </aside>
+
+        <!-- RIGHT CONTENT AREA -->
+        <section class="right-col">
+
+            <!-- PROJECT PANE 1: ACALPHARMA -->
+<div id="acalpharma" class="pub-pane active">
+    <div class="project-card">
+        
+        <div class="project-header-group">
+            <h2>ACALPHARMA</h2>
+            <h4 class="project-subtitle">Global monographic study of the plant genus <i>Acalypha</i>, with special attention to the species of medicinal and pharmacological interest</h4>
+        </div>
+
+        <div class="project-text-content">
+            
+            <!-- ROW 1: TEXT LEFT, IMAGE RIGHT -->
+            <div class="feature-row">
+                <div class="feature-text">
+                    <h3>The Genus <i>Acalypha</i></h3>
+                    <p>
+                        <i>Acalypha</i> L. is a diverse and widespread genus of flowering plants in the family Euphorbiaceae, comprising nearly 500 species distributed across tropical and subtropical regions worldwide. The genus is characterised by its herbaceous, shrubby, or sometimes small tree-like growth forms, often with serrated leaves and inconspicuous flowers grouped in catkin-like inflorescences.
+                    </p>
+                    <p>
+                        <i>Acalypha</i> species thrive in various habitats, including rainforests, dry woodlands, and disturbed areas, demonstrating remarkable ecological adaptability. Some species are cultivated as ornamentals for their striking foliage and unique inflorescences, while others play essential roles in local ecosystems.
+                    </p>
+                    <p>
+                        Beyond their ecological significance, <i>Acalypha</i> species have garnered increasing attention for their ethnobotanical and pharmacological potential. Dozens of species have been traditionally used in folk medicine across the world for treating skin conditions, respiratory ailments, and inflammatory disorders.
+                    </p>
+                </div>
+                <figure class="feature-media">
+                    <img src="images/acalypha-field.jpg" alt="Acalypha female inflorescence" loading="lazy">
+                    <figcaption><i>Acalypha</i> female inflorescence with characteristic accrescent bracts.</figcaption>
+                </figure>
+            </div>
+
+            <!-- ROW 2: IMAGE LEFT, TEXT RIGHT -->
+            <div class="feature-row">
+                <figure class="feature-media">
+                    <img src="images/acalypha-paniculata.jpg" alt="Acalypha paniculata inflorescence" loading="lazy">
+                    <figcaption><i>Acalypha paniculata</i> inflorescence with pedunculate female flowers.</figcaption>
+                </figure>
+                <div class="feature-text">
+                    <h3>The ACALPHARMA Project</h3>
+                    <p>
+                        Taxonomy is often perceived as an old-fashioned, merely descriptive science. It is sometimes seen as no longer necessary, but evidence shows the opposite: taxonomy is now more necessary than ever before. We now accumulate data at rates never seen, but the lack of taxonomic expertise and intense data curation makes identification errors widespread.
+                    </p>
+                    <p>
+                        In 2023, we secured funding from the Spanish Ministry of Science and Innovation to conduct a global-scale study of <i>Acalypha</i>, with special attention to the species in Africa. Our aim is both to improve taxonomic knowledge of <i>Acalypha</i> species and to investigate the origin and evolution of the species known to produce chemical substances of medicinal and pharmacological interest.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ROW 3: INFORMATION SYSTEM BLOCK + LINKED SCREENSHOT -->
+            <div class="info-callout-box">
+                <h3>Acalypha Taxonomic Information System</h3>
+                <p>
+                    The <i>Acalypha Taxonomic Information System</i> is an online resource dedicated to the genus <i>Acalypha</i> via <a href="https://www.acalypha.es" target="_blank" rel="noopener">www.acalypha.es</a>. It offers:
+                </p>
+                
+                <ul class="stats-grid-list">
+                    <li>Nomenclature for ~1,700 published names</li>
+                    <li>Data from ~40,000 herbarium specimen records</li>
+                    <li>Access to ~25,000 images, including photographs and illustrations</li>
+                    <li>Over 1,600 literature references</li>
+                    <li>Conservation assessments of over 200 species</li>
+                    <li>Ethno-pharmacological information of all species with recorded uses</li>
+                </ul>
+
+                <a href="https://www.acalypha.es" target="_blank" rel="noopener" class="web-preview-card">
+                    <img src="images/acalypha-web.png" alt="Screenshot of the Acalypha Taxonomic Information System" loading="lazy">
+                    <div class="web-preview-caption">
+                        Visit Acalypha Taxonomic Information System (www.acalypha.es) &rarr;
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+            <!-- PROJECT PANE 2: IPOSTOR -->
+            <div id="ipostor" class="pub-pane">
+                <div class="project-card">
+                    <div class="project-header-group">
+                        <h2>IPOSTOR</h2>
+                        <h4 class="project-subtitle">Systematic studies on the genus <i>Ipomoea</i>, the morning glories, with a focus on evolutionary patterns including long-distance dispersal and storage root development</h4>
+                    </div>
+
+                    <div class="project-gallery-grid dual-aspect">
+                        <figure class="gallery-item">
+                            <img src="images/ipomoea-flower.jpg" alt="Ipomoea flower structure" loading="lazy">
+                            <figcaption>Morphological diversity in <i>Ipomoea</i> flowers.</figcaption>
+                        </figure>
+                        <figure class="gallery-item">
+                            <img src="images/ipomoea-dispersal.jpg" alt="Ipomoea habitat and root development" loading="lazy">
+                            <figcaption>Evolutionary patterns in storage root development.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT PANE 3: SWEET POTATO -->
+            <div id="sweet-potato" class="pub-pane">
+                <div class="project-card">
+                    <div class="project-header-group">
+                        <h2>SWEET POTATO</h2>
+                        <h4 class="project-subtitle">Research on the origin, evolution and domestication of <i>Ipomoea batatas</i> (L.) Lam. and its close wild relatives</h4>
+                    </div>
+
+                    <div class="project-gallery-grid dual-aspect">
+                        <figure class="gallery-item">
+                            <img src="images/sweetpotato-field.jpg" alt="Sweet potato wild relatives in the field" loading="lazy">
+                            <figcaption>Wild relatives of sweet potato in tropical Americas.</figcaption>
+                        </figure>
+                        <figure class="gallery-item">
+                            <img src="images/sweetpotato-genomics.jpg" alt="Phylogenomic mapping" loading="lazy">
+                            <figcaption>Phylogenomic reconstructions of polyploid origins.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT PANE 4: MONOGRAPHS RENAISSANCE -->
+            <div id="monographs" class="pub-pane">
+                <div class="project-card">
+                    <div class="project-header-group">
+                        <h2>TAXONOMIC MONOGRAPHS: A RENAISSANCE</h2>
+                        <h4 class="project-subtitle">An initiative through publications and workshops to highlight and promote the role and significance of taxonomic monographs in modern science</h4>
+                    </div>
+
+                    <div class="project-gallery-grid single-wide">
+                        <figure class="gallery-item">
+                            <img src="images/monograph-workshop.jpg" alt="Taxonomic Monography Workshop" loading="lazy">
+                            <figcaption>International workshop on digital monography and modern taxonomy techniques.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- TAB SWITCHER JS SCRIPT -->
+    <script>
+        function switchProject(paneId, btnElement) {
+            const panes = document.querySelectorAll('.pub-pane');
+            panes.forEach(pane => pane.classList.remove('active'));
+
+            const buttons = document.querySelectorAll('.switch-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById(paneId).classList.add('active');
+            btnElement.classList.add('active');
+        }
+    </script>
+
+<!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            
+            <!-- Social & Academic Icons -->
+            <div class="footer-social-links">
+                <!-- Email -->
+                <a href="mailto:pablo.munoz@ucm.es" aria-label="Email" title="Email">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
+                
+                <!-- ORCID profile -->
+                <a href="https://orcid.org/0000-0002-3580-8136" target="_blank" rel="noopener" aria-label="ORCID" title="ORCID">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                </a>
+				
+				<!-- Google Scholar -->
+                <a href="https://scholar.google.com/citations?user=fl0V-DkAAAAJ&hl=es" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l12 9.5 12-9.5L12 0z"/></svg>
+                </a>
+                
+                <!-- Bluesky profile -->
+                <a href="https://bsky.app/profile/pablomurod.bsky.social" target="_blank" rel="noopener" aria-label="Bluesky" title="Bluesky">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566 1.01 0 2.196 0 5.15c0 2.47 1.258 8.877 2.08 10.518 1.112 2.22 3.864 2.825 5.86 1.83 2.19-1.092 3.06-3.14 4.06-5.698 1 2.558 1.87 4.606 4.06 5.698 1.996.995 4.748.39 5.86-1.83C22.742 14.027 24 7.62 24 5.15c0-2.954-2.566-4.14-5.202-2.345C16.046 4.747 13.087 8.686 12 10.8z"/></svg>
+                </a>
+
+                <!-- X profile -->
+                <a href="https://x.com/pablomurod/" target="_blank" rel="noopener" aria-label="X (Twitter)" title="X">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+            </div>
+
+            <!-- Copyright Notice -->
+            <div class="footer-copyright">
+                &copy; <span id="current-year"></span> Pablo Muñoz-Rodríguez. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        // Auto-update year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
